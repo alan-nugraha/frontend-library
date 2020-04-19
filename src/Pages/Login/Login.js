@@ -10,17 +10,11 @@ const mapStateToProps = user => {
     }
 }
 class Login extends Component {
-    componentDidMount() {
-        const token = localStorage.getItem('KEY_TOKEN');
-        if (token) {
-            this.props.history.push('/home')
-        } else {
-            this.props.history.push('/login')
-        }
-    }
     state = {
         email: "",
         password: "",
+        id_user: "",
+        fullname: ""
     }
 
     postLogin = (event) => {

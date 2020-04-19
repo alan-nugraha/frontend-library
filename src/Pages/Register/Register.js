@@ -10,14 +10,6 @@ const mapStateToProps = user => {
     }
 }
 class Register extends Component {
-    componentDidMount() {
-        const token = localStorage.getItem('KEY_TOKEN');
-        if (token) {
-            this.props.history.push('/home')
-        } else {
-            this.props.history.push('/register')
-        }
-    }
     state = {
         email: "",
         fullname: "",

@@ -48,6 +48,8 @@ const Sidebar = (props) => {
             console.log(error)
         }
     }
+    const fullname = localStorage.getItem("fullname");
+
     return (
         <div>
             <aside id="mySidebar" className="aside-nav-container">
@@ -55,8 +57,8 @@ const Sidebar = (props) => {
                     <i onClick={closeNav} className="fas fa-bars"></i>
                 </div>
                 <div className="profile-container">
-                    <img src="https://scontent.fjog3-1.fna.fbcdn.net/v/t1.0-9/82893153_2360473994056415_2531902101668233216_n.jpg?_nc_cat=103&_nc_sid=09cbfe&_nc_oc=AQlj78Qk0E9tpk7E0EGIu_dox-f9Fqo18Z1yPAVzSzM0DNnb1mQrDhJ-rnXJ2Z8Hbno&_nc_ht=scontent.fjog3-1.fna&oh=ec8d6ce24898894f008967c38311eaf1&oe=5E9D392F" width="100%" alt="profil.jpg" />
-                    <h3>Alan Nugraha</h3>
+                    <img src="https://topgear.com.sg/sites/default/files/default_images/avatar-default.png" width="100%" alt="profil.jpg" />
+                    <h3>{fullname}</h3>
                 </div>
                 <nav className="aside-nav">
                     <ul>
